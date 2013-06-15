@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class="span12">
+		<div class="span9">
 			<div class="page-header">
 				<h1>Home <br/> 
 					<small>About Us</small> 
@@ -43,5 +43,6 @@
 				<li>Continually developing <strong>our own people</strong> to reach greater heights and achievements.</li>
 			</ul>
 		</div>
+		<div class="span3">To be added later</div>
 	</div>
 </div>
