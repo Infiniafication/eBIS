@@ -1,17 +1,13 @@
 <div class="navbar-wrapper">
-    <div class="navbar">
-        <div class="navbar-inner">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner pull-center">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </a>
             <div class="nav-center">
-                <div class="span1">
-                    <a href="<?php echo base_url(); ?>"><img src="<?php echo base_url() . 'img/logo.png' ?>" alt="logo" class="logo"></a>
-                </div>
-
-                <div class="span10">
+                <div class="span11">
                     <div class="nav-collapse collapse">
                         <ul class="nav">
                             <li <?php if(current_url() == (base_url() . 'index.php')) { echo 'class="active"'; } ?> >

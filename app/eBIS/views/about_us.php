@@ -1,19 +1,20 @@
-<div class="container">
+<div class="container article">
 	<div class="row">
+		<div class="span3"><img src="<?php echo base_url() . 'img/logo.png' ?>" alt="logo" class="logo"></div>
 		<div class="span9">
 			<div class="page-header">
-				<h1>Home <br/> 
-					<small>About Us</small> 
+				<h1>Home <br/>
+					<small>About Us</small>
 				</h1>
 			</div>
 
 			<h2>Briefly on EBIS</h2>
 			<p>
-				EBIS Training Centre Sdn Bhd was set up with the vision to develop the future mid level executives as well as to focus on catering the training needs of the non executive level. This is because we truly understand that there is an urgent need to create and develop potential middle management successors in all organizations. Therefore, our proficient content developers at EBIS are totally committed to design sophisticated, fun and compelling course content specifically made for the executive and non-executive level workforce. Our main objective is to equip the essential skills and critical enhancements needed in modern business world to create dynamic and savvy future leaders in this region. 
+				EBIS Training Centre Sdn Bhd was set up with the vision to develop the future mid level executives as well as to focus on catering the training needs of the non executive level. This is because we truly understand that there is an urgent need to create and develop potential middle management successors in all organizations. Therefore, our proficient content developers at EBIS are totally committed to design sophisticated, fun and compelling course content specifically made for the executive and non-executive level workforce. Our main objective is to equip the essential skills and critical enhancements needed in modern business world to create dynamic and savvy future leaders in this region.
 			</p>
 			<br />
 			<p>
-				We also have taken shrewd steps by partnering with top notch, field-expert trainers to deliver training programs thoroughly-designed to give maximum impact to our target audience. It is important for our content developers to conduct frequent industry survey and research in order to be constantly updated with the current and critical training needs in our market today. 
+				We also have taken shrewd steps by partnering with top notch, field-expert trainers to deliver training programs thoroughly-designed to give maximum impact to our target audience. It is important for our content developers to conduct frequent industry survey and research in order to be constantly updated with the current and critical training needs in our market today.
 			</p>
 			<br />
 			<p>
@@ -23,7 +24,7 @@
 			<br />
 			<hr />
 			<br />
-			
+
 			<h2>Vision &amp; Mission Statement</h2>
 			<h3>Vision</h3>
 			<p class="lead">
@@ -43,6 +44,5 @@
 				<li>Continually developing <strong>our own people</strong> to reach greater heights and achievements.</li>
 			</ul>
 		</div>
-		<div class="span3">To be added later</div>
 	</div>
 </div>

@@ -1,5 +1,17 @@
-.nav-center {
-    margin-left: 15%;
+@media (min-width: 980px) {
+    .pull-center {
+        text-align: center;
+    }
+    .pull-center > .nav-center {
+        float:none;
+        display:inline-block;
+        *display: inline; *zoom: 1;
+        height: 45px;
+    }
+}
+
+.article {
+    margin-top: 60px;
 }
 
 .navbar .nav > li > a {
