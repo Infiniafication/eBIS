@@ -10,28 +10,56 @@
     }
 }
 
-.article {
+body {
+    background-image: linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
+    background-image: -o-linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
+    background-image: -moz-linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
+    background-image: -webkit-linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
+    background-image: -ms-linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.44, rgb(227,98,150)),
+        color-stop(0.72, rgb(230,115,184)),
+        color-stop(0.86, rgb(240,240,240))
+    );
+
+    color: #36454F;
+}
+
+h1, h2, h3, h4 {
+    color: #343434;
+}
+
+.main-content {    
     margin-top: 60px;
 }
 
+.article {
+    background-color: #f0f0f0;
+}
+
 .navbar .nav > li > a {
-    color: #FFFFFF;
+    color: #36454F;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
-    color: #FFFFFF;
+    color: #36454F;
 }
 
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
-    background-color: #ff9a40;
+    background-color: #FF69B4;
     color:#FFFFFF;
-    font-weight: bold;
+    font-weight: 500;
+    font-size: 18px;
+    font-variant: small-caps;
 }
 
 .navbar .nav li.dropdown.open>.dropdown-toggle,.navbar .nav li.dropdown.active>.dropdown-toggle,.navbar .nav li.dropdown.open.active>.dropdown-toggle {
-    background-color:#ED913E;
-    color:#FFFFFF;
-    font-weight: bold;
+    background-color:#FAD7F5;
+    color:#B82EB3;
 }

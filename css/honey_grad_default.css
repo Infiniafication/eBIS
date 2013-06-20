@@ -1,0 +1,58 @@
+@media (min-width: 980px) {
+    .pull-center {
+        text-align: center;
+    }
+    .pull-center > .nav-center {
+        float:none;
+        display:inline-block;
+        *display: inline; *zoom: 1;
+        height: 45px;
+    }
+}
+
+body {
+    background-image: linear-gradient(bottom, rgb(240,231,132) 44%, rgb(230,224,113) 72%, rgb(240,240,240) 86%);
+    background-image: -o-linear-gradient(bottom, rgb(240,231,132) 44%, rgb(230,224,113) 72%, rgb(240,240,240) 86%);
+    background-image: -moz-linear-gradient(bottom, rgb(240,231,132) 44%, rgb(230,224,113) 72%, rgb(240,240,240) 86%);
+    background-image: -webkit-linear-gradient(bottom, rgb(240,231,132) 44%, rgb(230,224,113) 72%, rgb(240,240,240) 86%);
+    background-image: -ms-linear-gradient(bottom, rgb(240,231,132) 44%, rgb(230,224,113) 72%, rgb(240,240,240) 86%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.44, rgb(240,231,132)),
+        color-stop(0.72, rgb(230,224,113)),
+        color-stop(0.86, rgb(240,240,240))
+    );
+}
+
+.main-content {    
+    margin-top: 60px;
+}
+
+.article {
+    background-color: #f0f0f0;
+}
+
+.navbar .nav > li > a {
+    color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #FFFFFF;
+}
+
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+    background-color: #ff9a40;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+.navbar .nav li.dropdown.open>.dropdown-toggle,.navbar .nav li.dropdown.active>.dropdown-toggle,.navbar .nav li.dropdown.open.active>.dropdown-toggle {
+    background-color:#ED913E;
+    color:#FFFFFF;
+    font-weight: bold;
+}

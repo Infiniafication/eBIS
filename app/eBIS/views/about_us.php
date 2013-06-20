@@ -1,7 +1,7 @@
-<div class="container article">
+<div class="container main-content">
 	<div class="row">
-		<div class="span3"><img src="<?php echo base_url() . 'img/logo.png' ?>" alt="logo" class="logo"></div>
-		<div class="span9">
+		<div class="span2"><img src="<?php echo base_url() . 'img/logo.png' ?>" alt="logo" class="logo"></div>
+		<div class="span9 article well">
 			<div class="page-header">
 				<h1>Home <br/>
 					<small>About Us</small>
