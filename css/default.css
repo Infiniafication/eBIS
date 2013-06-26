@@ -11,19 +11,19 @@
 }
 
 body {
-    background-image: linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
-    background-image: -o-linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
-    background-image: -moz-linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
-    background-image: -webkit-linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
-    background-image: -ms-linear-gradient(bottom, rgb(227,98,150) 44%, rgb(230,115,184) 72%, rgb(240,240,240) 86%);
+    background-image: linear-gradient(bottom, rgb(31,1,59) 45%, rgb(104,20,207) 71%, rgb(240,240,240) 91%);
+    background-image: -o-linear-gradient(bottom, rgb(31,1,59) 45%, rgb(104,20,207) 71%, rgb(240,240,240) 91%);
+    background-image: -moz-linear-gradient(bottom, rgb(31,1,59) 45%, rgb(104,20,207) 71%, rgb(240,240,240) 91%);
+    background-image: -webkit-linear-gradient(bottom, rgb(31,1,59) 45%, rgb(104,20,207) 71%, rgb(240,240,240) 91%);
+    background-image: -ms-linear-gradient(bottom, rgb(31,1,59) 45%, rgb(104,20,207) 71%, rgb(240,240,240) 91%);
 
     background-image: -webkit-gradient(
         linear,
         left bottom,
         left top,
-        color-stop(0.44, rgb(227,98,150)),
-        color-stop(0.72, rgb(230,115,184)),
-        color-stop(0.86, rgb(240,240,240))
+        color-stop(0.45, rgb(31,1,59)),
+        color-stop(0.71, rgb(104,20,207)),
+        color-stop(0.91, rgb(240,240,240))
     );
 
     color: #36454F;
@@ -42,17 +42,17 @@ h1, h2, h3, h4 {
 }
 
 .navbar .nav > li > a {
-    color: #36454F;
+    color: #FFFFFF;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
-    color: #36454F;
+    color: #FFFFFF;
 }
 
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
-    background-color: #FF69B4;
+    background-color: #FF45F3;
     color:#FFFFFF;
     font-weight: 500;
     font-size: 18px;
