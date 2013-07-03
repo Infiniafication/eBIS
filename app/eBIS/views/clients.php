@@ -1,11 +1,4 @@
 <script>
-	// $(document).ready(function () {
-	//   	if (location.hash){
-	//     	$(location.hash).collapse('toggle');
-	//     	$(location.hash).parents('.accordion-body').collapse('show');
-	//   	}
-	// });
-
 	function change()
 	{
 	    var elem = document.getElementById("company_expand");
