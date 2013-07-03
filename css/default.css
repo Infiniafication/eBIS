@@ -25,6 +25,8 @@ body {
         color-stop(0.71, rgb(104,20,207)),
         color-stop(0.91, rgb(240,240,240))
     );
+    background-attachment: fixed;
+    height:100%;
 
     color: #36454F;
 }
@@ -41,6 +43,8 @@ h1, h2, h3, h4 {
 
 .article {
     background-color: #f0f0f0;
+    position: relative;
+    /*margin-left: 25%;*/
 }
 
 .navbar .nav > li > a {
@@ -72,4 +76,35 @@ h1, h2, h3, h4 {
     font-weight: 500;
     font-size: 18px;
     font-variant: small-caps;
+}
+
+.btn-expand {
+    font-weight: 900;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+a.expand:hover {
+    text-decoration: none;
+    color:#0088cc;
+}
+
+.text-box {
+    height: 400px;
+    overflow: auto;
+    position: relative;
+}
+
+.no-top-margin {
+    margin-top: none;
+}
+
+.no-top-padding {
+    padding-top: none;
+}
+
+.logo {
+    position: fixed;
+    width: 14%;
+    max-width: 200px;
 }
