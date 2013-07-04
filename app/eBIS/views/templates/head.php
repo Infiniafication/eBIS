@@ -4,7 +4,7 @@
 <head>
 
 <?php
-	echo meta('Content-type', 'text/html; charset=utf-8', 'equiv'); 
+	echo meta('Content-type', 'text/html; charset=utf-8', 'equiv');
 	echo meta('description', 'TBA');
 	echo meta('robots', 'all');
 	echo meta('author', 'Infinia, FeliciousX');

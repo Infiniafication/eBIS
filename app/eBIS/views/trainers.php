@@ -11,7 +11,7 @@
 			<p>
 				Our Team brings world class trainers and  experienced business practitioners with real insights on leading-edge topics to you. Trainers associated with us are located throughout Asia, Australia, United States and Europe.
 			</p>
-			
+
 
 			<br />
 			<hr />
@@ -45,6 +45,3 @@
 				<p>Ever since Lynne and her team first approached me to do a seminar, I have found them to be a friendly, world class, highly professional seminar and event organization. They have been easy to work with, very helpful, highly organized and superbly clear in their communications. I was very impressed by the level of of service they offer the end customers and the kinds of questions they were sending back from potential delegates. The event itself went very smoothly and the delegates were all very happy with the way WTC ran things. I would have no hesitation in recommending WTC to my colleagues and look forward to working with you again soon.</p>
 				<small>Rohit Talwar, <cite title="CEO, FastFuture Ventures Limited">CEO, FastFuture Ventures Limited</cite></small>
 			</blockquote>
-		</div>
-	</div>
-</div>

@@ -24,7 +24,6 @@
 			<br />
 			<hr />
 			<br />
-
 			<h2 id="vision_mission">Vision &amp; Mission Statement</h2>
 			<h3>Vision</h3>
 			<p class="lead">
@@ -43,6 +42,3 @@
 				<li>Maintain our <strong>relationship</strong> with existing clients while keep on growing our corporate database in order to be the preferred training provider in Asia.</li>
 				<li>Continually developing <strong>our own people</strong> to reach greater heights and achievements.</li>
 			</ul>
-		</div>
-	</div>
-</div>

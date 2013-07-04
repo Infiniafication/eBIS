@@ -23,13 +23,13 @@
 			</div>
 
 			<p>We are extremely proud of our client list which we have served literally hundreds of satisfied clients.  Top 100 Multinational Corporations, State Governments and Universities have utilized our training as their organizational improvement and continuous learning channel.</p>
-			
+
 			<br />
 			<div class="accordion" id="companies_accordion">
 				<div class="accordion-group">
 					<h2 class="expand" id="company_list">List of Companies &nbsp;
 						<a class="expand" class="accordion-toggle" data-toggle="collapse" data-parent="#companies_accordion" href="#collapseOne">
-							 <input type="button" class="btn btn-primary btn-expand" id="company_expand" onclick="change()" value="-" /> 
+							 <input type="button" class="btn btn-primary btn-expand" id="company_expand" onclick="change()" value="-" />
 						</a>
 					</h2>
 					<div id="collapseOne" class="accordion-body collapse in">
@@ -234,7 +234,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<br />
 			<hr />
 			<br />
@@ -243,7 +243,7 @@
 				<div class="accordion-group">
 					<h2 class="expand" id="testimonial">Testimonial &nbsp;
 						<a class="expand" class="accordion-toggle" data-toggle="collapse" data-parent="#testimonial_accordion" href="#collapseTwo">
-							<input type="button" class="btn btn-primary btn-expand" id="testimonial_expand" onclick="change2()" value="-" /> 
+							<input type="button" class="btn btn-primary btn-expand" id="testimonial_expand" onclick="change2()" value="-" />
 						</a>
 						<p class="no-top-margin no-top-padding"><small>What participants say about our training:</small></p>
 					</h2>
@@ -433,11 +433,7 @@
 								<p>The course is very interesting! We have learnt the skills to predict breakdown. By having such prediction, we will always ready with the solution which will be able to minimize the cost of repairing and maintaining the breakdown. This is the new innovative approach of Predictive Maintenance that I believe can be applied to our factory.</p>
 								<small>Technical &amp; Engineering Director, <cite title="Osram OS Sdn Bhd">Osram OS Sdn Bhd</cite></small>
 							</blockquote>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
+						</div> <!-- end of accordion-inner -->
+					</div> <!-- end of collapseTwo -->
+				</div> <!-- end of accordion-group -->
+			</div> <!-- end of testimonial_accordion -->

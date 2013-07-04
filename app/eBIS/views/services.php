@@ -22,8 +22,3 @@
 
 			<h2 id="conference">Conference</h2>
 			<p>In line with the ever changing local &amp; global corporate climate, our conference developers in EBIS work hard to organize thought-provoking conferences covering the latest and pressing issues in the industry. Our conferences will feature top credentials and versatile speakers and will deliver numerous success stories and contents that will push the envelope &amp; invigorate the mind of corporate leaders in the region.</p>			<br/>
-
-		</div>
-	</div>
-</div>
-
