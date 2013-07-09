@@ -13,6 +13,9 @@
                             <li <?php if(current_url() == (base_url() . 'index.php')) { echo 'class="active"'; } ?> >
                                 <a href="<?php echo base_url(); ?>">Home</a>
                             </li>
+                            <li <?php if(current_url() == base_url() . 'index.php/about_us') { echo 'class="active"'; } ?> >
+                                <a href="<?php echo base_url() . 'about_us'; ?>">About Us</a>
+                            </li>
                             <li class="dropdown <?php if(current_url() == base_url() . 'index.php/services') { echo ' active'; } ?>">
                                 <a href="<?php echo base_url() . 'services'; ?>" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
                                     Our Services
@@ -31,18 +34,20 @@
                             <li <?php if(current_url() == base_url() . 'index.php/trainers') { echo 'class="active"'; } ?> >
                                 <a href="<?php echo base_url() . 'trainers'; ?>">Our Trainers</a>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown <?php if(current_url() == base_url() . 'index.php/career') { echo ' active'; } ?> ">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     Career
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Career with EBIS</a></li>
-                                    <li><a href="#">Current Vacancy</a></li>
+                                    <li><a href="<?php echo base_url() . 'career'; ?>">Career</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="<?php echo base_url() . 'career#career'; ?>">Career with EBIS</a></li>
+                                    <li><a href="<?php echo base_url() . 'career#vacancy'; ?>">Current Vacancy</a></li>
                                 </ul>
                             </li>
                             <li <?php if(current_url() == base_url()) { echo 'class="active"'; } ?> >
-                                <a href="#">Contact Us</a>
+                                <a href="<?php echo base_url() . 'contact_us'; ?>">Contact Us</a>
                             </li>
                         </ul>
                     </div>  <!--/.nav-collapse -->
