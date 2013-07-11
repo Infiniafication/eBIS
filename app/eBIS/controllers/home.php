@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Home extends MY_Controller {
 
 	public function index()
 	{
@@ -8,10 +8,17 @@ class Home extends CI_Controller {
 
 		$this->load->helper('url');
 
+		$this->data['link'] = array(
+			array(
+	          'href' => 'css/style.css',
+	          'rel' => 'stylesheet',
+	          'type' => 'text/css',
+	          'media' => 'screen'
+			)
+		);
+
 		$this->load->view('templates/head.php', $this->data);
-		$this->load->view('templates/navbar.php', $this->data);
 		$this->load->view('home.php', $this->data);
-		$this->load->view('templates/foot.php', $this->data);
 	}
 }
 

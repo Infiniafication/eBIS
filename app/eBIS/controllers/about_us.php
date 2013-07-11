@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class About_us extends CI_Controller {
+class About_us extends MY_Controller {
 
 	public function index()
 	{

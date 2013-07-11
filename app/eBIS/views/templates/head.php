@@ -14,23 +14,9 @@
 
 <?php
 
-$link = array(
-          'href' => 'css/bootstrap.min.css',
-          'rel' => 'stylesheet',
-          'type' => 'text/css',
-          'media' => 'screen'
-);
-
-echo link_tag($link) . "\n";
-
-$link = array(
-          'href' => 'css/default.css',
-          'rel' => 'stylesheet',
-          'type' => 'text/css',
-          'media' => 'screen'
-);
-
-echo link_tag($link) . "\n";
+for ($i=0; $i < count($link); $i++) { 
+     echo link_tag($link[$i]);
+}
 
 ?>
 

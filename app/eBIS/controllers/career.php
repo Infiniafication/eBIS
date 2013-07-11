@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Career extends CI_Controller {
+class Career extends MY_Controller {
 
 	public function index()
 	{

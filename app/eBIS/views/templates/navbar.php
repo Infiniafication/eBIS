@@ -14,25 +14,25 @@
                                 <a href="<?php echo base_url(); ?>">Home</a>
                             </li>
                             <li <?php if(current_url() == base_url() . 'index.php/about_us') { echo 'class="active"'; } ?> >
-                                <a href="<?php echo base_url() . 'about_us'; ?>">About Us</a>
+                                <a href="<?php echo base_url() . 'index.php/about_us'; ?>">About Us</a>
                             </li>
                             <li class="dropdown <?php if(current_url() == base_url() . 'index.php/services') { echo ' active'; } ?>">
-                                <a href="<?php echo base_url() . 'services'; ?>" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+                                <a href="<?php echo base_url() . 'index.php/services'; ?>" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
                                     Our Services
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url() . 'services'; ?>">Our Services</a></li>
+                                    <li><a href="<?php echo base_url() . 'index.php/services'; ?>">Our Services</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="<?php echo base_url() . 'services#workshop'; ?>">Workshop</a></li>
-                                    <li><a href="<?php echo base_url() . 'services#conference'; ?>">Conference</a></li>
+                                    <li><a href="<?php echo base_url() . 'index.php/services#workshop'; ?>">Workshop</a></li>
+                                    <li><a href="<?php echo base_url() . 'index.php/services#conference'; ?>">Conference</a></li>
                                 </ul>
                             </li>
                             <li <?php if(current_url() == base_url() . 'index.php/clients') { echo 'class="active"'; } ?> >
-                                <a href="<?php echo base_url() . 'clients'; ?>">Our Clients</a>
+                                <a href="<?php echo base_url() . 'index.php/clients'; ?>">Our Clients</a>
                             </li>
                             <li <?php if(current_url() == base_url() . 'index.php/trainers') { echo 'class="active"'; } ?> >
-                                <a href="<?php echo base_url() . 'trainers'; ?>">Our Trainers</a>
+                                <a href="<?php echo base_url() . 'index.php/trainers'; ?>">Our Trainers</a>
                             </li>
                             <li class="dropdown <?php if(current_url() == base_url() . 'index.php/career') { echo ' active'; } ?> ">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -40,14 +40,14 @@
                                     <b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?php echo base_url() . 'career'; ?>">Career</a></li>
+                                    <li><a href="<?php echo base_url() . 'index.php/career'; ?>">Career</a></li>
                                     <li class="divider"></li>
-                                    <li><a href="<?php echo base_url() . 'career#career'; ?>">Career with EBIS</a></li>
-                                    <li><a href="<?php echo base_url() . 'career#vacancy'; ?>">Current Vacancy</a></li>
+                                    <li><a href="<?php echo base_url() . 'index.php/career#career'; ?>">Career with EBIS</a></li>
+                                    <li><a href="<?php echo base_url() . 'index.php/career#vacancy'; ?>">Current Vacancy</a></li>
                                 </ul>
                             </li>
-                            <li <?php if(current_url() == base_url()) { echo 'class="active"'; } ?> >
-                                <a href="<?php echo base_url() . 'contact_us'; ?>">Contact Us</a>
+                            <li <?php if(current_url() == base_url() . 'index.php/contact_us') { echo 'class="active"'; } ?> >
+                                <a href="<?php echo base_url() . 'index.php/contact_us'; ?>">Contact Us</a>
                             </li>
                         </ul>
                     </div>  <!--/.nav-collapse -->
