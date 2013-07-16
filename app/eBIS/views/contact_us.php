@@ -20,7 +20,7 @@
 			</address>
 
 			<address>
-				World Class Training Centre Sdn Bhd <br />
+				<a href="http://www.wtc-intl.com">World Class Training Centre Sdn Bhd</a><br />
 				Sublot 36, 1st Floor, <br />
 				The 3rd Exchange Commercial Centre, <br />
 				Jalan Datuk Tawi Sli, <br />
@@ -39,8 +39,8 @@
 			<br />
 			<h2 id="facebook">Facebook</h2>
 			<!-- facebook credentials should be placed here -->
-			<div class="fb-like" data-href="https://www.facebook.com/pages/WTC-Group/423929637652046" data-send="true" data-width="490" data-show-faces="true" data-font="segoe ui"></div>
-			<div class="fb-like-box" data-href="https://www.facebook.com/pages/WTC-Group/423929637652046" data-width="490" data-height="510" data-show-faces="true" data-stream="true" data-show-border="true" data-header="true"></div>			<div id="fb-root"></div>
+			<div class="fb-like" data-href="https://www.facebook.com/pages/WTC-Group/423929637652046" data-send="true" data-width="600" data-show-faces="true" data-font="segoe ui"></div>
+			<div class="fb-like-box" data-href="https://www.facebook.com/pages/WTC-Group/423929637652046" data-width="600" data-height="510" data-show-faces="true" data-stream="true" data-show-border="true" data-header="true"></div>			<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;

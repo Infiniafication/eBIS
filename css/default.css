@@ -11,7 +11,7 @@
 }
 
 body {
-   background-image: linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
+  background-image: linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
   background-image: -o-linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
   background-image: -moz-linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
   background-image: -webkit-linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
@@ -43,7 +43,6 @@ h1, h2, h3, h4 {
 .article {
     background-color: #f0f0f0;
     position: relative;
-    /*margin-left: 25%;*/
 }
 
 .navbar .nav > li > a {
@@ -57,7 +56,7 @@ h1, h2, h3, h4 {
 }
 
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
-    background-color: #FF45F3;
+    background-color: #F551CF;
     color:#FFFFFF;
     font-weight: 500;
     font-size: 18px;
@@ -70,7 +69,7 @@ h1, h2, h3, h4 {
 }
 
 .navbar .nav li.dropdown.active>.dropdown-toggle {
-    background-color: #FF45F3;
+    background-color: #F551CF;
     color:#FFFFFF;
     font-weight: 500;
     font-size: 18px;
@@ -89,7 +88,7 @@ a.expand:hover {
 }
 
 .text-box {
-    height: 400px;
+    height: 300px;
     overflow: auto;
     position: relative;
 }
@@ -181,3 +180,7 @@ i.icon-fb {
   clear: none;
 }
 
+.tip {
+  margin-bottom: 5px;
+  clear: both;
+}

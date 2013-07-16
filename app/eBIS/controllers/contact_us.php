@@ -27,12 +27,13 @@ class Contact_us extends MY_Controller {
 		$form = "";
 
 		$form .= form_open('contact_us');
-		$form .= form_fieldset('Submit an enquiry');
+		$form .= form_fieldset('<h2>Submit an enquiry</h2>');
 		$form .= form_label('Name', 'name');
 		$attributes = array(
 			'placeholder' => 'Your Name',
 			'name' => 'name',
 			'id' => 'name',
+			'class' => 'input-xlarge',
 			'required' => ''
 			);
 		$form .= form_input($attributes);
@@ -42,6 +43,7 @@ class Contact_us extends MY_Controller {
 			'placeholder' => 'Your Email',
 			'name' => 'email',
 			'id' => 'email',
+			'class' => 'input-xlarge',
 			'required' => ''
 			);
 		$form .= form_input($attributes);
@@ -50,6 +52,7 @@ class Contact_us extends MY_Controller {
 			'placeholder' => 'Subject Title',
 			'name' => 'title',
 			'id' => 'title',
+			'class' => 'input-xlarge',
 			'required' => ''
 			);
 		$form .= form_input($attributes);
@@ -57,10 +60,11 @@ class Contact_us extends MY_Controller {
 		$attributes = array(
 			'name' => 'message',
 			'id' => 'message',
+			'class' => 'input-xlarge',
 			'required' => ''
 			);
 		$form .= form_textarea($attributes);
-		$form .= '<span class="help-block">Text area can be resized using the bottom right corner.</span>';
+		$form .= '<br/><span class="label label-info tip">Tip: Text area can be resized using the bottom right corner.</span>';
 		
 		$attributes = array(
 			'value' => 'cc',
@@ -71,7 +75,9 @@ class Contact_us extends MY_Controller {
 				      <input type="checkbox" value="cc" />Send a copy of email to yourself
 				    </label>';
 		$form .= form_label($checkbox, 'cc', array('class' => 'checkbox'));
-		$form .= form_submit('submit', 'Submit', 'class="btn btn-large"');
+		$form .= form_submit('submit', 'Submit Enquiry', 'class="btn btn-large btn-primary submit"');
+		$form .= nbs(2);
+		$form .= form_reset('clear', 'Clear Form', 'class="btn btn-large"');
 		$form .= form_fieldset_close();
 		$form .= form_close();
 

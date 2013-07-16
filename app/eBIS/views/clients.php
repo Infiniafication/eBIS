@@ -243,20 +243,22 @@
 				<div class="accordion-group">
 					<h2 class="expand" id="testimonial">Testimonial &nbsp;
 						<a class="expand" class="accordion-toggle" data-toggle="collapse" data-parent="#testimonial_accordion" href="#collapseTwo">
-							<input type="button" class="btn btn-primary btn-expand" id="testimonial_expand" onclick="change2()" value="-" />
+							<input type="button" class="btn btn-primary btn-expand" id="testimonial_expand" onclick="change2()" value="+" />
 						</a>
 						<p class="no-top-margin no-top-padding"><small>What participants say about our training:</small></p>
 					</h2>
+					<div class="accordion-inner">
+						<blockquote>
+							<p>The trainer is well versed; he is very expert in negotiation skills and tactics.</p>
+							<small>Assistant Key Account Manager, <cite title=" F &amp; N Beverages Marketing Sdn Bhd"> F &amp; N Beverages Marketing Sdn Bhd</cite></small>
+						</blockquote>
+						<blockquote>
+							<p>Refreshing! Brief and concise handout.  I really like the role play session and the game which used scenario planning method. The case studies are tested against real life situation.</p>
+							<small>Assistant Manager, <cite title="Measat Broadcast Network System Sdn Bhd">Measat Broadcast Network System Sdn Bhd</cite></small>
+						</blockquote>
+					</div>
 					<div id="collapseTwo" class="accordion-body collapse in">
 						<div class="accordion-inner">
-							<blockquote>
-								<p>The trainer is well versed; he is very expert in negotiation skills and tactics.</p>
-								<small>Assistant Key Account Manager, <cite title=" F &amp; N Beverages Marketing Sdn Bhd"> F &amp; N Beverages Marketing Sdn Bhd</cite></small>
-							</blockquote>
-							<blockquote>
-								<p>Refreshing! Brief and concise handout.  I really like the role play session and the game which used scenario planning method. The case studies are tested against real life situation.</p>
-								<small>Assistant Manager, <cite title="Measat Broadcast Network System Sdn Bhd">Measat Broadcast Network System Sdn Bhd</cite></small>
-							</blockquote>
 							<blockquote>
 								<p>I will definitely apply all the information &amp; knowledge that I’ve learnt from this training. Shaun Belding is a brilliant guy; the use of the latest approach is very practical in delivery. He really gives full explanation on how to use social media to boost up customer services.</p>
 								<small>Assistant Manager, <cite title="Permodalan Nasional Berhad">Permodalan Nasional Berhad</cite></small>
@@ -437,3 +439,4 @@
 					</div> <!-- end of collapseTwo -->
 				</div> <!-- end of accordion-group -->
 			</div> <!-- end of testimonial_accordion -->
+
