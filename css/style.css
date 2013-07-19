@@ -24,6 +24,7 @@ body
 
 .welcome, .to
 {
+	cursor: default;
 	position:fixed;
 	-webkit-animation:welcome 7s; /* Safari and Chrome */
 	-webkit-animation-fill-mode: forwards;
