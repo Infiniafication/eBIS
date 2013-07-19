@@ -36,6 +36,10 @@ h1, h2, h3, h4 {
     margin-top: -50px;
 }
 
+p {
+  text-align: justify;
+}
+
 .main-content {
     margin-top: 60px;
 }
