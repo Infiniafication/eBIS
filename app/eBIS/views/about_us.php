@@ -3,9 +3,7 @@
 		<div class="span2"><img src="<?php echo base_url() . 'img/logo.png' ?>" alt="logo" class="logo"></div>
 		<div class="span9 article well">
 			<div class="page-header">
-				<h1>About Us <br/>
-					<small><a href="#brief">Briefly on EBIS</a> &nbsp; | &nbsp; <a href="#vision_mission">Vision &amp; Mission</a></small>
-				</h1>
+				<h1>About Us</h1>
 			</div>
 
 			<h2 id="brief">Briefly on EBIS</h2>
