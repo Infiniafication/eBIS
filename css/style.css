@@ -37,7 +37,6 @@ body
 	position: absolute;
 	bottom: 10%;
 	right: 47%;
-	font-size: 3em;
 	opacity: 1;
 }
 
@@ -114,7 +113,7 @@ body
 	-webkit-animation-delay:5.0s;
 }
 
-@-webkit-keyframes welcome /* Safari and Chrome */
+@-webkit-keyframes welcome 
 {
 	0%   {left:35%; top:40%; vertical-align: middle;}
 	25%  {left:10%; top:40%; vertical-align: middle;}
@@ -123,7 +122,7 @@ body
 	100% {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
 }
 
-@-webkit-keyframes to /* Safari and Chrome */
+@-webkit-keyframes to 
 {
 	0%   {left:50%; top:40%; vertical-align: middle; opacity: 0;}
 	25%  {left:50%; top:40%; vertical-align: middle; opacity: 1;}
@@ -132,7 +131,7 @@ body
 	100% {left:50%; top:40%; vertical-align: middle; opacity: 0;}
 }
 
-@-webkit-keyframes logo /* Safari and Chrome */
+@-webkit-keyframes logo 
 {
 	0%   {right:20%; top:32%; vertical-align: middle; opacity: 0;}
 	25%  {right:20%; top:32%; vertical-align: middle; opacity: 1;}
@@ -141,11 +140,449 @@ body
 	100% {right:40%; top:32%; vertical-align: middle; opacity: 1;}
 }
 
-@-webkit-keyframes navlink /* Safari and Chrome */
+@-webkit-keyframes navlink 
 {
 	0%   {opacity: 0;}
 	25%  {opacity: 1;}
 	50%  {opacity: 1;}
 	75%  {opacity: 1;}
 	100% {opacity: 1;}
+}
+
+@media only screen and (max-width: 1920px)
+{
+	.welcome
+	{
+		left:40%; 
+		top:40%; 
+		vertical-align: middle;
+	}
+
+	@-webkit-keyframes welcome /* Safari and Chrome */
+	{
+		0%   {left:40%; top:40%; vertical-align: middle;}
+		25%  {left:20%; top:40%; vertical-align: middle;}
+		50%  {left:20%; top:40%; vertical-align: middle; color:#333333; text-shadow: none;}
+		75%  {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+		100% {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+	}
+
+	@-webkit-keyframes to /* Safari and Chrome */
+	{
+		0%   {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		25%  {left:50%; top:40%; vertical-align: middle; opacity: 1;}
+		50%  {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		75%  {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		100% {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+	}
+
+	@-webkit-keyframes logo /* Safari and Chrome */
+	{
+		0%   {right:27%; top:34%; vertical-align: middle; opacity: 0;}
+		25%  {right:27%; top:34%; vertical-align: middle; opacity: 1;}
+		50%  {right:42%; top:34%; vertical-align: middle; opacity: 1;}
+		75%  {right:42%; top:34%; vertical-align: middle; opacity: 1;}
+		100% {right:42%; top:34%; vertical-align: middle; opacity: 1;}
+	}
+}
+
+@media only screen and (max-width: 1366px)
+{
+	.btn-xlarge
+	{
+		height: 150%;
+		width: 32%;
+	}
+
+	.welcome, .to
+	{
+		cursor: default;
+		position:fixed;
+		-webkit-animation:welcome 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:0.5s;
+		font-size: 8em;
+	}
+
+	.bot-nav
+	{
+		position: absolute;
+		bottom: 10%;
+		right: 47%;
+		opacity: 1;
+	}
+
+	.welcome
+	{
+		left:35%; 
+		top:40%; 
+		vertical-align: middle;
+	}
+
+	.to
+	{
+		position:fixed;
+		opacity: 0;
+		-webkit-animation:to 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:1.5s;
+	}
+
+	.logo
+	{
+		background-image: url("../img/logo.png");
+		width: 226px;
+		height: 140px;
+		position:fixed;
+		opacity: 0;
+		-webkit-animation:logo 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:2.5s;
+	}
+
+	.l1
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:4.2s;
+	}
+
+	.l2
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:4.4s;
+	}
+
+	.l3
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:4.6s;
+	}
+
+	.l4
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:4.8s;
+	}
+
+	.l5
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:5.0s;
+	}
+
+	@-webkit-keyframes welcome /* Safari and Chrome */
+	{
+		0%   {left:35%; top:40%; vertical-align: middle;}
+		25%  {left:10%; top:40%; vertical-align: middle;}
+		50%  {left:10%; top:40%; vertical-align: middle; color:#333333; text-shadow: none;}
+		75%  {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+		100% {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+	}
+
+	@-webkit-keyframes to /* Safari and Chrome */
+	{
+		0%   {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		25%  {left:50%; top:40%; vertical-align: middle; opacity: 1;}
+		50%  {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		75%  {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		100% {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+	}
+
+	@-webkit-keyframes logo /* Safari and Chrome */
+	{
+		0%   {right:20%; top:32%; vertical-align: middle; opacity: 0;}
+		25%  {right:20%; top:32%; vertical-align: middle; opacity: 1;}
+		50%  {right:40%; top:32%; vertical-align: middle; opacity: 1;}
+		75%  {right:40%; top:32%; vertical-align: middle; opacity: 1;}
+		100% {right:40%; top:32%; vertical-align: middle; opacity: 1;}
+	}
+
+	@-webkit-keyframes navlink /* Safari and Chrome */
+	{
+		0%   {opacity: 0;}
+		25%  {opacity: 1;}
+		50%  {opacity: 1;}
+		75%  {opacity: 1;}
+		100% {opacity: 1;}
+	}
+}
+
+@media only screen and (max-width: 1280px) 
+{
+	.welcome
+	{
+		left:40%; 
+		top:40%; 
+		vertical-align: middle;
+	}
+
+	@-webkit-keyframes welcome /* Safari and Chrome */
+	{
+		0%   {left:40%; top:40%; vertical-align: middle;}
+		25%  {left:5%; top:40%; vertical-align: middle;}
+		50%  {left:5%; top:40%; vertical-align: middle; color:#333333; text-shadow: none;}
+		75%  {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+		100% {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+	}
+
+	@-webkit-keyframes to /* Safari and Chrome */
+	{
+		0%   {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		25%  {left:50%; top:40%; vertical-align: middle; opacity: 1;}
+		50%  {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		75%  {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+		100% {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+	}
+
+	@-webkit-keyframes logo /* Safari and Chrome */
+	{
+		0%   {right:12%; top:31%; vertical-align: middle; opacity: 0;}
+		25%  {right:12%; top:31%; vertical-align: middle; opacity: 1;}
+		50%  {right:38%; top:31%; vertical-align: middle; opacity: 1;}
+		75%  {right:38%; top:31%; vertical-align: middle; opacity: 1;}
+		100% {right:38%; top:31%; vertical-align: middle; opacity: 1;}
+	}
+}
+
+@media only screen and (max-width: 1024px) 
+{
+	.welcome, .to
+	{
+		cursor: default;
+		position:fixed;
+		-webkit-animation:welcome 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:0.5s;
+		font-size: 5em;
+	}
+
+	.to
+	{
+		position:fixed;
+		opacity: 0;
+		-webkit-animation:to 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:1.5s;
+	}
+
+	.btn-xlarge
+	{
+		height: 150%;
+		width: 22%;
+	}
+
+	.bot-nav
+	{
+		position: absolute;
+		bottom: 10%;
+		right: 30%;
+		opacity: 1;
+	}
+
+	@-webkit-keyframes to /* Safari and Chrome */
+	{
+		0%   {left:45%; top:40%; vertical-align: middle; opacity: 0;}
+		25%  {left:45%; top:40%; vertical-align: middle; opacity: 1;}
+		50%  {left:45%; top:40%; vertical-align: middle; opacity: 0;}
+		75%  {left:45%; top:40%; vertical-align: middle; opacity: 0;}
+		100% {left:45%; top:40%; vertical-align: middle; opacity: 0;}
+	}
+}
+
+@media only screen and (max-width: 800px)
+{
+	.btn-xlarge
+	{
+		height: 150%;
+		width: 15%;
+	}
+
+	.bot-nav
+	{
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+		opacity: 1;
+	}
+
+	@-webkit-keyframes to /* Safari and Chrome */
+	{
+		0%   {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		25%  {left:47%; top:40%; vertical-align: middle; opacity: 1;}
+		50%  {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		75%  {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		100% {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+	}
+
+	@-webkit-keyframes logo /* Safari and Chrome */
+	{
+		0%   {right:12%; top:31%; vertical-align: middle; opacity: 0;}
+		25%  {right:12%; top:31%; vertical-align: middle; opacity: 1;}
+		50%  {right:35%; top:31%; vertical-align: middle; opacity: 1;}
+		75%  {right:35%; top:31%; vertical-align: middle; opacity: 1;}
+		100% {right:35%; top:31%; vertical-align: middle; opacity: 1;}
+	}
+} 
+
+@media only screen and (max-width: 600px)
+{
+	.welcome, .to
+	{
+		cursor: default;
+		position:fixed;
+		-webkit-animation:welcome 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:0.5s;
+		font-size: 3em;
+	}
+
+	.to
+	{
+		position:fixed;
+		opacity: 0;
+		-webkit-animation:to 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:1.5s;
+	}
+
+	.btn-xlarge
+	{
+		height: 150%;
+		width: 13%;
+	}
+
+	.btn-group > .btn-large
+	{
+		font-size: 12px;
+	}
+
+	.bot-nav
+	{
+		position: absolute;
+		bottom: 10%;
+		right: 10%;
+		opacity: 1;
+	}
+
+	@-webkit-keyframes to /* Safari and Chrome */
+	{
+		0%   {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		25%  {left:47%; top:40%; vertical-align: middle; opacity: 1;}
+		50%  {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		75%  {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		100% {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+	}
+
+	@-webkit-keyframes logo /* Safari and Chrome */
+	{
+		0%   {right:1%; top:31%; vertical-align: middle; opacity: 0;}
+		25%  {right:1%; top:31%; vertical-align: middle; opacity: 1;}
+		50%  {right:30%; top:31%; vertical-align: middle; opacity: 1;}
+		75%  {right:30%; top:31%; vertical-align: middle; opacity: 1;}
+		100% {right:30%; top:31%; vertical-align: middle; opacity: 1;}
+	}
+} 
+
+@media only screen and (max-width: 480px)
+{
+	.welcome, .to
+	{
+		cursor: default;
+		position:fixed;
+		-webkit-animation:welcome 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:0.5s;
+		font-size: 3em;
+	}
+
+	.welcome
+	{
+		left:35%; 
+		top:40%; 
+		vertical-align: middle;
+	}
+
+	.to
+	{
+		position:fixed;
+		opacity: 0;
+		-webkit-animation:to 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:1.5s;
+	}
+
+	.logo
+	{
+		background-image: url("../img/logo.png");
+		background-size: 150px 92px;
+		width: 150px;
+		height: 92px;
+		position:fixed;
+		opacity: 0;
+		-webkit-animation:logo 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:2.5s;
+	}
+
+	.btn-xlarge
+	{
+		height: 150%;
+		width: 11%;
+	}
+
+	.btn-group > .btn-large
+	{
+		font-size: 10px;
+	}
+
+	.bot-nav
+	{
+		position: absolute;
+		bottom: 10%;
+		right: 2%;
+		opacity: 1;
+	}
+
+	@-webkit-keyframes welcome /* Safari and Chrome */
+	{
+		0%   {left:35%; top:40%; vertical-align: middle;}
+		25%  {left:5%; top:40%; vertical-align: middle;}
+		50%  {left:5%; top:40%; vertical-align: middle; color:#333333; text-shadow: none;}
+		75%  {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+		100% {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+	}
+
+
+	@-webkit-keyframes to /* Safari and Chrome */
+	{
+		0%   {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		25%  {left:47%; top:40%; vertical-align: middle; opacity: 1;}
+		50%  {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		75%  {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+		100% {left:47%; top:40%; vertical-align: middle; opacity: 0;}
+	}
+
+	@-webkit-keyframes logo /* Safari and Chrome */
+	{
+		0%   {right:7%; top:34%; vertical-align: middle; opacity: 0;}
+		25%  {right:7%; top:34%; vertical-align: middle; opacity: 1;}
+		50%  {right:32%; top:34%; vertical-align: middle; opacity: 1;}
+		75%  {right:32%; top:34%; vertical-align: middle; opacity: 1;}
+		100% {right:32%; top:34%; vertical-align: middle; opacity: 1;}
+	}
 }
