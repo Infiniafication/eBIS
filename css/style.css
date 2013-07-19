@@ -1,129 +1,5 @@
-a{
-	color: #555;
-	text-decoration: none;
-}
-.clr{
-	clear: both;
-	padding: 0;
-	height: 0;
-	margin: 0;
-}
-
-.st-container {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	font-family: "Trajan Pro", "Helvetica Neue", Helvetica, "Book Antiqua", Arial, sans-serif;
-}
-
-.st-container > input,
-.st-container > a {
-	position: fixed;
-	bottom: 0px;
-	width: 20%;
-	cursor: pointer;
-	font-size: 18px;
-	height: 34px;
-	line-height: 34px;
-}
-
-.st-container > input {
-	opacity: 0;
-	z-index: 10;
-}
-
-.st-container > a {
-	z-index: 1000;
-	font-weight: 700;
-	background: #B82EB3;
-	color: #fff;
-	text-align: center;
-	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
-}
-
-/* "Fix" for percentage rounding: add a background bar pseudo element with the same color like the labels */
-.st-container:before {
-	content: '';
-	position: fixed;
-	width: 100%;
-	height: 34px;
-	background: #B82EB3;
-	z-index: 9;
-	bottom: 0;
-}
-
-#st-control-1, #st-control-1 + a {
-	left: 0;
-}
-
-#st-control-2, #st-control-2 + a {
-	left: 20%;
-}
-
-#st-control-3, #st-control-3 + a {
-	left: 40%;
-}
-
-#st-control-4, #st-control-4 + a {
-	left: 60%;
-}
-
-#st-control-5, #st-control-5 + a {
-	left: 80%;
-}
-
-.st-container > input:checked + a,
-.st-container > input:checked:hover + a{
-	background: #821134;
-}
-
-.st-container > input:checked + a:after,
-.st-container > input:checked:hover + a:after{
-	bottom: 100%;
-	border: solid transparent;
-	content: '';
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-bottom-color: #821134;
-	border-width: 20px;
-	left: 50%;
-	margin-left: -20px;
-}
-
-.st-container > input:hover + a{
-	background: #AD244F;
-}
-
-.st-container > input:hover + a:after {
-	border-bottom-color: #AD244F;
-}
-
-.st-scroll,
-.st-panel {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-
-.st-scroll {
-	top: 0;
-	left: 0;
-	-webkit-transition: height 2.6s ease-in-out;
-	-moz-transition: height 2.6s ease-in-out;
-	-o-transition: height 2.6s ease-in-out;
-	-ms-transition: height 2.6s ease-in-out;
-	transition: height 2.6s ease-in-out;
-	
-	/* Let's enforce some hardware acceleration */
-	-webkit-transform: translate3d(0, 0, 0);
-	-webkit-backface-visibility: hidden;
-}
-
-.st-panel{
+body 
+{
 	background-image: linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
 	background-image: -o-linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
 	background-image: -moz-linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
@@ -131,64 +7,144 @@ a{
 	background-image: -ms-linear-gradient(top, rgb(255,255,255) 9%, rgb(136,85,194) 90%);
 
 	background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0.09, rgb(255,255,255)),
-		color-stop(0.9, rgb(136,85,194))
+	  linear,
+	  left top,
+	  left bottom,
+	  color-stop(0.09, rgb(255,255,255)),
+	  color-stop(0.9, rgb(136,85,194))
 	);
-    background-attachment: fixed;
-    height: 100%;
+	background-attachment: fixed;
+}
 
-    color: #36454F;
-	overflow: hidden;
-} 
+.btn-xlarge
+{
+	height: 150%;
+	width: 32%;
+}
 
+.welcome, .to
+{
+	position:fixed;
+	-webkit-animation:welcome 7s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:0.5s;
+	font-size: 8em;
+}
 
-/* Content elements */
-
-
-
-.st-panel p {
+.bot-nav
+{
 	position: absolute;
-	text-align: center;
-	font-size: 16px;
-	line-height: 22px;
-	color: #8b8b8b;
-	z-index: 2;
-	padding: 0;
-	width: 50%;
-	left: 25%;
-	top: 50%;
-	margin: -100px 0 0 0;
-	-webkit-backface-visibility: hidden;
+	bottom: 10%;
+	right: 47%;
+	font-size: 3em;
+	opacity: 1;
 }
 
-
-
-/* Colored sections */
-
-@media screen and (max-width: 520px) {
-	.st-panel h2 {
-		font-size: 42px;
-	}
-	
-	.st-panel p {
-		width: 90%;
-		left: 5%;
-		margin-top: 0;
-	}
-	
-	.st-container > a {
-		font-size: 13px;
-	}
-}
-@media screen and (max-width: 360px) {
-	.st-container > a {
-		font-size: 10px;
-	}
+.welcome
+{
+	left:35%; 
+	top:40%; 
+	vertical-align: middle;
 }
 
-a:hover {
-	background-color: #FF45F3;
+.to
+{
+	position:fixed;
+	opacity: 0;
+	-webkit-animation:to 7s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:1.5s;
+}
+
+.logo
+{
+	background-image: url("../img/logo.png");
+	width: 226px;
+	height: 140px;
+	position:fixed;
+	opacity: 0;
+	-webkit-animation:logo 7s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:2.5s;
+}
+
+.l1
+{
+	opacity: 0;
+	bottom: 1px;
+	-webkit-animation:navlink 7s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:4.2s;
+}
+
+.l2
+{
+	opacity: 0;
+	bottom: 1px;
+	-webkit-animation:navlink 7s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:4.4s;
+}
+
+.l3
+{
+	opacity: 0;
+	bottom: 1px;
+	-webkit-animation:navlink 7s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:4.6s;
+}
+
+.l4
+{
+	opacity: 0;
+	bottom: 1px;
+	-webkit-animation:navlink 7s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:4.8s;
+}
+
+.l5
+{
+	opacity: 0;
+	bottom: 1px;
+	-webkit-animation:navlink 7s; /* Safari and Chrome */
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay:5.0s;
+}
+
+@-webkit-keyframes welcome /* Safari and Chrome */
+{
+	0%   {left:35%; top:40%; vertical-align: middle;}
+	25%  {left:10%; top:40%; vertical-align: middle;}
+	50%  {left:10%; top:40%; vertical-align: middle; color:#333333; text-shadow: none;}
+	75%  {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+	100% {left:1%; top:70%; vertical-align: middle; color:#FAEBD7; text-shadow: 2px 2px #333333;}
+}
+
+@-webkit-keyframes to /* Safari and Chrome */
+{
+	0%   {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+	25%  {left:50%; top:40%; vertical-align: middle; opacity: 1;}
+	50%  {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+	75%  {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+	100% {left:50%; top:40%; vertical-align: middle; opacity: 0;}
+}
+
+@-webkit-keyframes logo /* Safari and Chrome */
+{
+	0%   {right:20%; top:32%; vertical-align: middle; opacity: 0;}
+	25%  {right:20%; top:32%; vertical-align: middle; opacity: 1;}
+	50%  {right:40%; top:32%; vertical-align: middle; opacity: 1;}
+	75%  {right:40%; top:32%; vertical-align: middle; opacity: 1;}
+	100% {right:40%; top:32%; vertical-align: middle; opacity: 1;}
+}
+
+@-webkit-keyframes navlink /* Safari and Chrome */
+{
+	0%   {opacity: 0;}
+	25%  {opacity: 1;}
+	50%  {opacity: 1;}
+	75%  {opacity: 1;}
+	100% {opacity: 1;}
 }

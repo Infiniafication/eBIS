@@ -10,6 +10,12 @@ class Home extends MY_Controller {
 
 		$this->data['link'] = array(
 			array(
+	          'href' => 'css/bootstrap.min.css',
+	          'rel' => 'stylesheet',
+	          'type' => 'text/css',
+	          'media' => 'screen'
+			),
+			array(
 	          'href' => 'css/style.css',
 	          'rel' => 'stylesheet',
 	          'type' => 'text/css',
