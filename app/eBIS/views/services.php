@@ -3,9 +3,7 @@
 		<div class="span2"><img src="<?php echo base_url() . 'img/logo.png' ?>" alt="logo" class="logo"></div>
 		<div class="span9 article well">
 			<div class="page-header">
-				<h1>Our Services <br/>
-					<small><a href="#workshop">Workshop</a> &nbsp; | &nbsp; <a href="#conference">Conference</a></small>
-				</h1>
+				<h1>Our Services</h1>
 			</div>
 
 			<h2 id="workshop">Workshop</h2>

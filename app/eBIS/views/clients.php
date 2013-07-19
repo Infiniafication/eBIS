@@ -17,9 +17,7 @@
 		<div class="span2"><img src="<?php echo base_url() . 'img/logo.png' ?>" alt="logo" class="logo"></div>
 		<div class="span9 article well">
 			<div class="page-header">
-				<h1>Our Clients <br/>
-					<small><a href="#company_list">List of Companies</a> &nbsp; | &nbsp; <a href="#testimonial">Testimonial</a></small>
-				</h1>
+				<h1>Our Clients</h1>
 			</div>
 
 			<p>We are extremely proud of our client list which we have served literally hundreds of satisfied clients.  Top 100 Multinational Corporations, State Governments and Universities have utilized our training as their organizational improvement and continuous learning channel.</p>
@@ -27,7 +25,7 @@
 			<br />
 			<div class="accordion" id="companies_accordion">
 				<div class="accordion-group">
-					<h2 class="expand" id="company_list">List of Companies &nbsp;
+					<h2 class="expand" id="company_list">Companies &nbsp;
 						<a class="expand" class="accordion-toggle" data-toggle="collapse" data-parent="#companies_accordion" href="#collapseOne">
 							 <input type="button" class="btn btn-primary btn-expand" id="company_expand" onclick="change()" value="-" />
 						</a>
