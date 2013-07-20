@@ -586,3 +586,128 @@ body
 		100% {right:32%; top:34%; vertical-align: middle; opacity: 1;}
 	}
 }
+
+@media only screen and (max-width: 360px)
+{
+	.welcome, .to
+	{
+		opacity: 0;
+		visibility: none;
+	}
+
+	.welcome
+	{
+		visibility: none;
+	}
+
+	.to
+	{
+		position:fixed;
+		opacity: 0;
+	}
+
+	.logo
+	{
+		background-image: url("../img/logo.png");
+		background-size: 150px 92px;
+		width: 150px;
+		height: 92px;
+		position:fixed;
+		opacity: 0;
+		-webkit-animation:logo 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;	
+	}
+
+	.btn-xlarge
+	{
+		text-align: center;
+		height: 120%;
+		width: 8%;
+	}
+
+	.btn-group
+	{
+		white-space: normal;
+	}
+
+	.btn-group > .btn-large
+	{
+		font-size: 11px;
+	}
+
+	.bot-nav
+	{
+		position: absolute;
+		bottom: 10%;
+		left: 2%;
+		opacity: 1;
+	}
+
+	.l1
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:2.2s;
+	}
+
+	.l2
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:2.4s;
+	}
+
+	.l3
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:2.6s;
+	}
+
+	.l4
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:2.8s;
+	}
+
+	.l5
+	{
+		opacity: 0;
+		bottom: 1px;
+		-webkit-animation:navlink 7s; /* Safari and Chrome */
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-delay:3.0s;
+	}
+
+	@-webkit-keyframes welcome /* Safari and Chrome */
+	{
+		0%   {opacity:0;}
+		100% {opacity:0;}
+	}
+
+
+	@-webkit-keyframes to /* Safari and Chrome */
+	{
+		0%   {opacity: 0;}
+		100% {opacity: 0;}
+	}
+
+	@-webkit-keyframes logo /* Safari and Chrome */
+	{
+		0%   {right:28%; top:0%; vertical-align: middle; opacity: 0;}
+		25%  {right:28%; top:34%; vertical-align: middle; opacity: 1;}
+		50%  {right:28%; top:34%; vertical-align: middle; opacity: 1;}
+		75%  {right:28%; top:34%; vertical-align: middle; opacity: 1;}
+		100% {right:28%; top:34%; vertical-align: middle; opacity: 1;}
+	}
+
+}
