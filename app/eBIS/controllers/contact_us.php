@@ -6,7 +6,9 @@ class Contact_us extends MY_Controller {
 	{
 		$this->data['title'] = '- EBIS | Contact Us -';
 
-		$this->load->helper('url');
+		$this->data['alert'] = "";
+
+		$this->load->helper('url');		
 
 		if ($this->input->post('submit')) {
 			$this->_processForm();
@@ -72,7 +74,7 @@ class Contact_us extends MY_Controller {
 			);
 
 		$checkbox = '<label class="checkbox">
-				      <input type="checkbox" value="cc" />Send a copy of email to yourself
+				      <input type="checkbox" name="cc" value="cc" />Send a copy of email to yourself
 				    </label>';
 		$form .= form_label($checkbox, 'cc', array('class' => 'checkbox'));
 		$form .= form_submit('submit', 'Submit Enquiry', 'class="btn btn-large btn-primary submit"');
@@ -86,7 +88,7 @@ class Contact_us extends MY_Controller {
 
 	private function _processForm()
 	{
-		$this->load->library('email');
+		$this->load->library('phpmailer');
 
 
 		$name = $this->input->post('name');
@@ -95,19 +97,68 @@ class Contact_us extends MY_Controller {
 		$message = $this->input->post('message', TRUE);
 		$cc = $this->input->post('cc');
 
-		$to = 'admin@wtc-intl.com';
+		$mail = $this->phpmailer;
+		//Tell PHPMailer to use SMTP
+		$mail->IsSMTP();
+		//Enable SMTP debugging
+		// 0 = off (for production use)
+		// 1 = client messages
+		// 2 = client and server messages
+		$mail->SMTPDebug  = 0;
+		//Ask for HTML-friendly debug output
+		$mail->Debugoutput = 'html';
+		//Set the hostname of the mail server
+		$mail->Host       = "mail.ebiscentre.com";
+		//Set the SMTP port number - likely to be 25, 465 or 587
+		$mail->Port       = 25;
+		//Whether to use SMTP authentication
+		$mail->SMTPAuth   = true;
+		//Username to use for SMTP authentication
+		$mail->Username   = "admin@ebiscentre.com";
+		//Password to use for SMTP authentication
+		$mail->Password   = "eCen&7712";
+		//Set who the message is to be sent from
+		$mail->SetFrom($email, $name);
+		//Set an alternative reply-to address
+		// $mail->AddReplyTo('replyto@example.com','First Last');
+		//Set who the message is to be sent to
+		$mail->AddAddress('admin@ebiscentre.com', 'Admin');
 
-		$this->email->from($email);
-		$this->email->to($to);
-
-		if ($cc) {			
-			$this->email->cc($cc);
+		if ($cc) {
+			$mail->AddCC($email, $name);
 		}
 
-		$this->email->subject($title);
-		$this->email->message($message);
+		//Set the subject line
+		$mail->Subject = $title;
+		//Read an HTML message body from an external file, convert referenced images to embedded, convert HTML into a basic plain-text alternative body
+		$mail->MsgHTML($message);
 
-		$this->email->send();
+		//Send the message, check for errors. send() Returns false if fail
+		$this->_showAlertBox($mail->Send());
+	}
+
+	private function _showAlertBox($success)
+	{
+		if ($success)
+		{
+			$this->data['alert'] = 
+			'<div class="row">
+				<div class="alert alert-success span5">
+			    	<button type="button" class="close" data-dismiss="alert">&times;</button>
+			    		<strong>Success!</strong> Enquiry sent. 
+				</div>
+			</div>';
+		}
+		else
+		{
+			$this->data['alert'] =
+			'<div class="row">
+				<div class="alert alert-error span5">
+		    		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		    			<strong>Oh snap!</strong> An error occured. Please try submitting again. 
+		    		</div>
+			 </div>';
+		}		
 	}
 }
 

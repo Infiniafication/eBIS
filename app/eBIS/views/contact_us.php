@@ -1,11 +1,12 @@
 <div class="container main-content">
+	<?php echo $alert; ?>
 	<div class="row">
 		<div class="span2"><img src="<?php echo base_url() . 'img/logo.png' ?>" alt="logo" class="logo"></div>
 		<div class="span9 article well">
 			<div class="page-header">
 				<h1>Contact Us</h1>
 			</div>
-
+			
 			<h2 id="address">Corporate Address</h2>
 			<address>
 				EBIS Training Centre Sdn Bhd <br />
@@ -31,7 +32,8 @@
 				Fax   		 : (+6) 082-570 248 <br />
 			</address>
 
-			<!-- Form to be added here -->
+			<!-- Contact Form -->
+			<!-- TODO: test if email sending works -->
 			<?php echo $form; ?>
 
 			<br />
