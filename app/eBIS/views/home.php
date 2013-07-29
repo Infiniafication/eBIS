@@ -1,3 +1,6 @@
+
+   <div class="ribbon-wrapper"><div class="ribbon"><a href="<?php echo base_url() . 'index.php/facebook'; ?> ">FACEBOOK</a></div></div>
+	
 	<div class="welcome">
 		Welcome
 	</div>

@@ -31,6 +31,9 @@
                             <li <?php if(current_url() == base_url() . 'index.php/contact_us') { echo 'class="active"'; } ?> >
                                 <a href="<?php echo base_url() . 'index.php/contact_us'; ?>">Contact Us</a>
                             </li>
+                            <li <?php if(current_url() == base_url() . 'index.php/facebook') { echo 'class="active"'; } ?> >
+                                <a href="<?php echo base_url() . 'index.php/facebook'; ?>">Facebook</a>
+                            </li>
                         </ul>
                     </div>  <!--/.nav-collapse -->
                 </div>

@@ -37,17 +37,4 @@
 			<?php echo $form; ?>
 
 			<br />
-			<hr />
-			<br />
-			<h2 id="facebook">Facebook</h2>
-			<!-- facebook credentials should be placed here -->
-			<div class="fb-like" data-href="https://www.facebook.com/pages/WTC-Group/423929637652046" data-send="true" data-width="600" data-show-faces="true" data-font="segoe ui"></div>
-			<div class="fb-like-box" data-href="https://www.facebook.com/pages/WTC-Group/423929637652046" data-width="600" data-height="510" data-show-faces="true" data-stream="true" data-show-border="true" data-header="true"></div>			<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 			

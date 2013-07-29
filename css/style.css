@@ -16,6 +16,67 @@ body
 	background-attachment: fixed;
 }
 
+/** FB Ribbon Start */
+
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: 0px;
+  opacity: 0;
+  -webkit-animation:ribbon 3s; /* Safari and Chrome */
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay:5s;
+}
+
+.ribbon {
+  font: bold 12px Sans-Serif;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px #333333;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #7AD1DC;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7AD1DC), to(#458EBF)); 
+  background-image: -webkit-linear-gradient(top, #7AD1DC, #458EBF); 
+  background-image:    -moz-linear-gradient(top, #7AD1DC, #458EBF); 
+  background-image:     -ms-linear-gradient(top, #7AD1DC, #458EBF); 
+  background-image:      -o-linear-gradient(top, #7AD1DC, #458EBF); 
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon > a {
+	color: #fff;
+}
+
+.ribbon:before, .ribbon:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon:before {
+  left: 0;
+}
+.ribbon:after {
+  right: 0;
+}
+/** FB Ribbon End **/
+
 .btn-xlarge
 {
 	height: 150%;
@@ -111,6 +172,12 @@ body
 	-webkit-animation:navlink 7s; /* Safari and Chrome */
 	-webkit-animation-fill-mode: forwards;
 	-webkit-animation-delay:5.0s;
+}
+
+@-webkit-keyframes ribbon 
+{
+	0%   {opacity:0;}
+	100% {opacity:1;}
 }
 
 @-webkit-keyframes welcome 
